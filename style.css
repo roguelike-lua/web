@@ -128,7 +128,24 @@ table {
     border-spacing: 0;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* styles */
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+#content-wrapper {
+    background-color: burlywood;
+    width: 815px;
+    height: 100vh;
+    overflow: scroll;
+}
 
 h1 {
     font-size: 2rem;
