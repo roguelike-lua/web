@@ -1,4 +1,9 @@
 function main() {
+    createVersionList();
+}
+
+// appends the different versions to version list
+function createVersionList() {
     let versionList = document.getElementById('version-list');
     for (let i = 0; i <= 200; i++) {
         if (i % 5 === 0) {
