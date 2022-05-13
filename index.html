@@ -18,14 +18,40 @@
         <div id="content-wrapper">
             <nav id="navigation">
                 <ul id="nav-list">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Download</a></li>
-                    <li><a href="#">Forum</a></li>
-                    <li><a href="#">Donate</a></li>
+                    <li>
+                        <img src="./svg/about.svg" />
+                        <a
+                            href="https://github.com/roguelike-lua/lualove/blob/main/README.md"
+                            >About</a
+                        >
+                    </li>
+                    <li>
+                        <img src="./svg/download.svg" />
+                        <a href="https://github.com/roguelike-lua/lualove"
+                            >Download</a
+                        >
+                    </li>
+                    <li>
+                        <img src="./svg/forum.svg" />
+                        <a href="https://www.reddit.com/">Forum</a>
+                    </li>
+                    <li>
+                        <img src="./svg/donate.svg" />
+                        <a href="https://www.paypal.com/gr/home">Donate</a>
+                    </li>
                 </ul>
             </nav>
             <ul id="version-list">
                 <h1>Version History</h1>
+                <div id="filter-wrapper">
+                    <label for="filter">Filter :</label>
+                    <select id="filter">
+                        <option value="">Please choose an option</option>
+                        <option value="bug">Bug fixes</option>
+                        <option value="minor">Minor release</option>
+                        <option value="major">Major release</option>
+                    </select>
+                </div>
                 <p>
                     Add script somehow that updates the HTML when a new version
                     is pushed to the remote repo
