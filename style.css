@@ -147,6 +147,10 @@ a {
     font-size: 1.5rem;
 }
 
+img {
+    height: 35px;
+}
+
 #content-wrapper {
     display: flex;
     flex-direction: column;
@@ -155,18 +159,24 @@ a {
     background: url(https://www.runescape.com/img/rsp777/bg2.jpg) repeat-y
         center top;
     color: burlywood;
-    width: 815px;
     overflow: scroll;
 }
 
 #navigation {
     background-color: #3f1d0b;
+    width: 100vw;
+}
+
+#navigation > ul > li {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    filter: brightness(0) invert(1);
 }
 
 #nav-list {
     display: flex;
-    justify-content: space-between;
-    gap: 100px;
+    justify-content: space-around;
 }
 
 h1 {
